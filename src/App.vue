@@ -43,7 +43,7 @@ export default {
       this.$store.dispatch("addUserData", data);
     },
     getQuizData() {
-        const response = fetch("https://34.94.148.202/get_questions", {
+        const response = fetch("https://34.105.92.112/get_questions", {
           method: 'POST',
           mode: 'cors',
         })
@@ -53,7 +53,7 @@ export default {
         });
     },
     setupWebSocket() {
-      const socket = io("wss://34.94.148.202");
+      const socket = io("wss://34.105.92.112");
       socket.on('connect', () => {  
         socket.emit("join", {
           userName: this.$store.getters.getUser("name"),
