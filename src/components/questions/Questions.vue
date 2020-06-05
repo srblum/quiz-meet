@@ -128,7 +128,7 @@ export default {
     },
     topScoringUsers() {
       return Object.values(this.$store.state.meeting.users)
-        .sort((a,b) => a.score - b.score)
+        .sort((a,b) => b.score - a.score)
         .slice(0,4);
     }
   },
@@ -330,7 +330,6 @@ export default {
     color: white;
     font-size: 100px;
     text-align: center;
-    font-family: rubik sans-serif;
     line-height: 200px;
     letter-spacing: 10px;
     font-weight: 900;
@@ -367,12 +366,13 @@ export default {
         display: inline-block;
         position: absolute;
         font-weight: 900;
-        top: -43px;
+        top: -48px;
         left: 0px;
         font-size: 40px;
         width: 150px;
         text-align: center;
         text-shadow: 0px 2px #C4C4C4;
+        span {font-size: 30px;}
       }
     }
     .resultA {
