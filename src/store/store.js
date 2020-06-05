@@ -5,7 +5,7 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    extensionID: "nhfoglnfaobjdcclkfnikaefmhfmekie",
+    extensionID: "maflgceipcpbbhglnndgklojaiclgldk",
     userData: null,
     meeting: null,
     questions: null,

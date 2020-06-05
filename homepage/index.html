@@ -26,7 +26,7 @@
 		<span class="title-caption-text">We allow teachers and students to directly interact within Google Meet’s interface to create a dynamic learning environment.</span>
 	</div>
 	<a href="https://github.com/srblum/quiz-meet">
-		<div class="linkbutton">
+		<div class="linkbutton" tabindex="0">
 			<span class="linkbuttontext">Add to Chrome</span>
 		</div>
 	</a>
@@ -100,7 +100,7 @@
 	<span class="footerbackground1"> </span>
 	<span class="footerbackground2"> </span>
 	<a href="https://github.com/srblum/quiz-meet">		
-		<div class="footerlinkbutton">
+		<div class="footerlinkbutton" tabindex="0">
 			<span class="footerlinkbuttontext">Get QuizMeet for Free</span>
 		</div>
 	</a>
@@ -229,7 +229,10 @@
 		left: 944px;
 		background-color: #FF4757;
 		cursor: pointer;
+		outline: none;
 	}
+	.linkbutton:focus{background-color:#9E111D;}
+
 	.linkbuttontext {
 		font-family: rubik;
 		font-size: 23pt;
@@ -656,7 +659,10 @@
 		background-color: #FF4757;
 		cursor: pointer;
 		z-index: 3;
+		outline: none;
 	}
+	.footerlinkbutton:focus{background-color:#9E111D;}
+
 	.footerlinkbuttontext {
 		font-family: rubik;
 		font-size: 23pt;
