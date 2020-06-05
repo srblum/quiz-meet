@@ -128,7 +128,7 @@ export default {
     },
     topScoringUsers() {
       return Object.values(this.$store.state.meeting.users)
-        .sort((a,b) => a.score - b.score)
+        .sort((a,b) =>  b.score - a.score)
         .slice(0,4);
     }
   },
